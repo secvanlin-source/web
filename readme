@@ -1,1 +1,4 @@
-
+lenh can thiet
+mo termial
+go lenh:"cd ....\backend"(duong dan toi file backend)
+go lenh: npm install express cors dotenv node-fetch
