@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BÁO CÁO 
+NGHIÊN CỨU KHOA HỌC
+</title>
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Đo dữ liệu:</h1>
+
+    <div class="card inputs">
+      <div class="row">
+        <label> Độ ẩm đất (%)</label>
+        <input id="soil" type="number" min="0" max="100" />
+      </div>
+
+      <div class="row">
+        <label> Nhiệt độ (°C)</label>
+        <input id="temp" type="number" step="0.1" />
+      </div>
+
+      <div class="row">
+        <label> Độ ẩm không khí (%)</label>
+        <input id="humidity" type="number" min="0" max="100" />
+      </div>
+
+      <div class="row actions">
+        <button id="sendBtn" class="btn primary">Gửi dữ liệu</button>
+        <button id="randomBtn" class="btn">Tiến hành đo</button>
+       
+      </div>
+    </div>
+
+    <div class="card output">
+      <h2>Kết quả</h2>
+
+      <div id="status" class="muted">Chưa gửi dữ liệu</div>
+
+
+
+      <div id="aiWrap">
+        <h3> AI Khuyến nghị</h3>
+        <div id="aiArea" class="markdown"></div>
+      </div>
+
+      <pre id="raw" class="raw hidden"></pre>
+    </div>
+
+    <footer class="muted small">
+    <!--  Backend endpoint: <code>http://localhost:3000/api/sensor/data</code>-->
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

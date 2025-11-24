@@ -1,0 +1,98 @@
+:root{
+  --bg:#f4f7fb;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#1976d2;
+  --danger:#d32f2f;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  color:#0f172a;
+  padding:28px;
+}
+
+.container{
+  max-width:980px;
+  margin:0 auto;
+}
+
+h1{margin:0 0 16px}
+.card{
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(15,23,42,0.06);
+  padding:18px;
+  margin-bottom:18px;
+}
+
+.inputs .row{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.inputs label{width:170px;font-weight:600}
+.inputs input{
+  flex:1;
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid #e6eef8;
+  background:#fbfeff;
+}
+
+.actions{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.btn{padding:10px 14px;border-radius:8px;border:0;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff}
+.checkbox{display:flex;align-items:center;gap:8px;font-size:14px}
+
+.output h2{margin-top:0}
+#status.muted{color:var(--muted)}
+
+.text{
+  white-space:pre-wrap;
+  font-size:15px;
+  line-height:1.45;
+  padding:10px;
+  border-radius:8px;
+  background:#fbfdff;
+  border:1px solid #eef6ff;
+}
+#randomBtn
+{background-color: #1973cc;
+color: #ffff;
+margin-right: 700px;
+margin-top: 0.5px;
+}
+.markdown{
+  padding:10px;
+  border-radius:8px;
+  background:#fff;
+  border:1px solid #eef1f6;
+}
+
+/* render for markdown basics */
+.markdown h1, .markdown h2, .markdown h3{margin:8px 0}
+.markdown p{margin:6px 0}
+.markdown b, .markdown strong{font-weight:700}
+.markdown i, .markdown em{font-style:italic}
+.markdown ul{margin:6px 0 6px 18px}
+.markdown li{margin:4px 0}
+
+/* raw debug area hidden by default */
+.raw{
+  margin-top:10px;
+  padding:10px;
+  background:#0b1220;
+  color:#cfe8ff;
+  border-radius:6px;
+  font-size:13px;
+  overflow:auto;
+}
+.hidden{display:none}
+#sendBtn:hover{
+  background-color: #1867b7;
+}
+#randomBtn:hover{
+  background-color: #1867b7;
+}
+.small{font-size:13px}
+.muted{color:var(--muted)}
